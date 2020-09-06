@@ -1,72 +1,60 @@
 *{
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 body{
-    background-color: #b8b8b8;
-}
+    background-color: #b8b8b8;}
 
 /* NAV BAR */
 
 .container{
+    display: none;}
+
+/* COVER COVER */
+
+.container-mini{
     background-color: #000000;
     display: flex;
     flex-direction: row;
     padding: 0.5rem 0.3rem;
     justify-content: space-between;}
-.container img{
+.container-mini img{
     margin-left: 0.6rem;
     width: 2.2rem;
     height:2.2rem;}
-.nav{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding: 0.5rem;}
-.nav-item{   
-    padding: 0 0.9rem;}
-.nav-item:last-child{
-    padding: 0 0.2rem;}
-.nav-link{
-    color: #b4b4b4;
-    text-decoration: none;}
-.nav-link:hover{
-    color: #d3d3d3;}
-.active{
-    color: white;}
-
-/* FORMATO CELULAR */
-
-.container-mini{
-    display: none;
+.container-mini button{
+    background-color: black;
+    border: none;
+}
+.container-mini button div{
+    width: 2.2rem;
+    height: 0.3rem;
+    background-color: white;
+    margin: 0.2rem 0;
+    
 }
 
-/* COVER COVER */
 
 .cover-container{
     background:  url(images/Torres_electricas_2.jpg) no-repeat center;
     background-size: cover;
-    height: 450px;
-    background-position-y: -148px;
+    height: 320px;
     display: flex;
-    justify-content: flex-end;}
+    justify-content: center;}
 .cover-container::before{
     content: '';
     position: absolute;
     width: 100%;
-    height: 450px;
+    height: 320px;
     background-image: -webkit-linear-gradient(#000000fa, #2c2c2c85);}
 .cover-body{
     z-index: 10;
-    width: 24rem;
+    width: 20rem;
     align-self: center;
-    margin-right: 10rem;
     margin-bottom: 4rem;
-    font-size: 1.9rem;
-    text-align: right;
-    color: #d3d3d3;
-    border-right: 0.6rem solid #f3e414;
-    padding-right: 1.8rem;}
+    font-size: 1.6rem;
+    text-align: center;
+    color: #d3d3d3;}
 .cover-body h1{
     color: #f3e414;
     letter-spacing: 0.15rem;
@@ -86,125 +74,103 @@ body{
     font-size: 1.2rem;
     font-weight: 600;}
 .main-button:hover{
-    background-color: #b89e0e;}
+    background-color: #b89e0e;} 
 
-/* CARDS CARDS */
+
+/* CARDS*/
 
 .card-container-1{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem 2rem 0.5rem 2rem;
-}
-#c2{
-    padding: 0.5rem 2rem 1rem 2rem;
-}
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0rem 0.5rem 0rem;}
 .card{
     background-color: white;
     display: flex;
-    flex-direction: row;
-    width: 46%;
-    height: 120px;
-    padding: 0.5rem 1rem;
+    flex-direction: column;
     align-items: center;
+    width: 80%;
+    height: fit-content;
+    margin: 0 0 1rem;
+    padding: 1rem 1rem;       
     border-radius: 0.8rem;
     box-shadow: 0 0 0.3rem 0.3rem #18181854;
-}
-#right{
-    flex-direction: row-reverse;
-    text-align: right;
-}
+    align-self: center;}
 .card-img-top{
     padding: 0.5rem;
     background-color: #f3e414;
     width: 6rem;
-    height: 6rem;
-    order: 1;
-}
+    height: 6rem;}
 .card-body{
     padding: 0 0.7rem;
-    order: 2;
-}
+    text-align: center;}
 .card-text{
-    margin-bottom: 0.7rem;
-}
+    margin-bottom: 0.7rem;}
 .btn{
     background-color: #f3e414;
     padding: 0.4rem 0.8rem;
     text-decoration: none;
-    color: black;
-}
-.btn:hover{
-    background-color: #b89e0e;
-}
+    color: black;}
+.btn:hover{    
+    background-color: #b89e0e;}
 
 /* PROMS */
 
 .prom1{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    padding: 2rem 4rem;
-}
+    padding: 2rem 1rem;}
 .prom1 img{
-    width: 40%;
-    height: 40%;
-    margin-right: 1rem;
-}
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;}
 .prom1 article{
     background-color: white;
+    width: auto;
+    margin: 1rem 0;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     border-inline-start-style: solid;
     border-color: #f3e414;
-    border-width: 0.4rem;
-}
+    border-width: 0.4rem;}
 .prom2{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: center;
-    padding: 2rem 4rem;
-}
+    padding: 2rem 1rem;}
 .prom2 img{
-    width: 28%;
-    height: 15%;
-    margin-left: 1rem;    
-}
+    align-self: center;
+    width: 70%;
+    height: 70%;
+    margin: 1rem 0;}
 .prom2 article{
     background-color: white;
+    margin: 1rem 0;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
     border-inline-end-style: solid;
     border-color: #f3e414;
     border-width: 0.4rem;
-    text-align: end;
-}
+    text-align: end;}
 
+/* FOOTER */
 
 footer{
-    padding: 1rem 2rem;        
-} 
+    padding: 1rem 2rem;} 
 .socialmedia-container{
     display: flex;
     flex-direction: row;  
-    justify-content: center;      
-}
+    justify-content: center;}
 .socialmedia-container a{
     margin: 0 1rem;
     border: 0.1rem solid #00000057;
     background-color: #0000000e;
-    border-radius: 0.15rem;
-}
+    border-radius: 0.15rem;}
 .socialmedia-container a:hover{
     background-color: #f3e414cb;
-    border-color: #f3e414cb;
-}
+    border-color: #f3e414cb;}
 .socialmedia-container a img{
-    
     width: 16px;
     height: 16px;
-    padding: 0.5rem 0.5rem 0.4rem 0.5rem;
-}
-
-
-
+    padding: 0.5rem 0.5rem 0.4rem 0.5rem;}    
