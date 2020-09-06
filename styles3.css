@@ -36,7 +36,7 @@ body{
 
 
 .cover-container{
-    background:  url(images/Torres_electricas_2.jpg) no-repeat center;
+    background:  url(Torres_electricas_2.jpg) no-repeat center;
     background-size: cover;
     height: 320px;
     display: flex;
